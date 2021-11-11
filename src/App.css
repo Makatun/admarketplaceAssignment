@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+
+body {
+  background: rgb(245, 245, 245);  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pageContent {
+  max-width:1024px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  border-left: 1px solid rgb(177, 177, 177);
+  border-right: 1px solid rgb(177, 177, 177);
+  height:100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.commentName{
+  font-weight: 400;
+  color: dodgerblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.commentBody{
+  font-size: 14px;
+  margin: 3px;
+}
+
+
+.postTitle{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 40px;
+  color: rgb(77, 93, 148);
+  padding: 15px;
+}
+
+.postBody{
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.commentContainer{
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 7px;
+  margin: 4px 30px;
+  padding: 5px;
+  background-color: #f7f7f7;
+}
+
+.formContainer {
+  margin: 20px 45px;
+}
+
+.formRow{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap
 }
 
-.App-link {
-  color: #61dafb;
+.formField {
+  padding: 10px;
+  align-items: baseline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.formField > * { 
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.04);
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+  border-image: none;
+  border-radius: 6px 6px 6px 6px;
+  border-style: none solid solid none;
+  border-width: medium 1px 1px medium;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+  color: #555555;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  padding: 5px 8px;
+  transition: background-color 0.2s ease 0s;
+}
+
+.formField > textarea:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    outline-width: 0;
+}
+
+.formField > input:focus {
+  background: none repeat scroll 0 0 #FFFFFF;
+  outline-width: 0;
+}
+
+.formField > textarea {
+  width: 485px;
+  height: 76px;
+}
+
+.formField > button {
+  width: 150px;
+  height: 88px;
+  background-color: dodgerblue;
+  color:#FFFFFF
 }
